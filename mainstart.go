@@ -14,10 +14,10 @@ import (
 
 func sendmail(srv gmail.Service, frommail string) {
 	temp := []byte("From: 'me'\r\n" +
-		"reply-to: blobcorpciso@gmail.com\r\n" +
-		"To:  blobcorpciso@gmail.com\r\n" +
-		"Subject: Feed Spot \r\n" +
-		"remember to feed spot")
+		"reply-to: hackcorp_pentester@gmail.com\r\n" +
+		"To:  hackcorp_pentester@gmail.com\r\n" +
+		"Subject: Feed rocky \r\n" +
+		"remember to feed rocky")
 
 	var message gmail.Message
 
