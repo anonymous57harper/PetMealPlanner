@@ -50,7 +50,7 @@ func main() {
 		log.Fatalf("Unable to retrieve Gmail client: %v", err)
 	}
 
-	user := "Antoine Fermier"
+	user := "me" // Maybe i should not leak my identity...
 
 	c := cron.New()
 	c.AddFunc("0 3 * * * *", func() sendmail(*srv)})
